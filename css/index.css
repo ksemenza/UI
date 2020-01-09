@@ -708,7 +708,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapProfile2 {
     flex-direction: column;
   }
@@ -927,12 +927,13 @@ textarea {
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 }
 /*** UNDER CONSTRUCTION ***/
-.mainSection {
+html .mainSection {
   height: 450px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row-reverse;
 }
 .sign {
   color: #FB4264;
@@ -941,10 +942,26 @@ textarea {
   -moz-animation: glowShadow 1.2s ease infinite;
   -webkit-animation: glowShadow 1.2s ease infinite;
   font-weight: 900;
-  font-size: 7.2rem;
+  font-size: 5.5rem;
+  position: absolute;
+}
+@media (max-width: 800px) {
+  .sign {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .sign {
+    font-size: 2.7rem;
+  }
 }
 .underCon {
-  height: 450px;
+  height: 80%;
+}
+@media (max-width: 800px) {
+  .underCon {
+    width: 100%;
+  }
 }
 header {
   display: flex;
