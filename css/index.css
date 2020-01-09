@@ -700,8 +700,7 @@ body {
 @media (max-width: 500px) {
   .profileWrap {
     margin-bottom: 2.4rem;
-    padding: 1.2rem;
-    max-width: 475px;
+    max-width: 175px;
   }
 }
 /*WRAPS TWO ENTIRE PROFILES TOGETHER*/
@@ -778,12 +777,13 @@ body {
 .bioTxt {
   width: 350px;
   height: 250px;
-  padding: 1.4rem 3.2rem;
+  padding: 1.4rem 1.2rem;
   text-align: center;
 }
 @media (max-width: 800px) {
   .bioTxt {
-    width: 300px;
+    width: fit-content;
+    height: 100%;
   }
 }
 .contactIcon {
