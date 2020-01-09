@@ -386,11 +386,10 @@ body {
 @media (max-width: 500px) {
   .heroImgWrap .heroTxt {
     padding: 2.4rem;
-    line-height: 3.2rem;
     font-size: 1.2rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .heroImgWrap .heroBtns {
     display: none;
   }
