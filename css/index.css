@@ -689,74 +689,61 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 450px;
+  justify-content: center;
+  width: 450px;
 }
 @media (max-width: 800px) {
   .profileWrap {
-    max-width: 325px;
+    max-width: 255px;
   }
 }
 @media (max-width: 500px) {
   .profileWrap {
     margin-bottom: 2.4rem;
-    padding: 3.2rem;
+    padding: 1.2rem;
     max-width: 475px;
   }
 }
+/*WRAPS TWO ENTIRE PROFILES TOGETHER*/
+.wrapProfile2 {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .wrapProfile2 {
+    flex-direction: column;
+  }
+}
 /*WRAPS IMG AND CONTACTS*/
+.profileImgContactWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*WRAPS ALL PROFILES CONTACTS*/
 .contactWrapAll {
   display: flex;
   align-items: center;
 }
-/*WRAPS SINGLE CONTACT TYPE AND INFO*/
-.contactWrap {
-  margin-left: 3.2rem;
-  font-size: 1.8rem;
-  padding: 1.8rem;
-}
-@media (max-width: 800px) {
-  .contactWrap {
-    max-width: 350px;
-    margin-left: 1.1rem;
-  }
-}
-@media (max-width: 500px) {
-  .contactWrap {
-    max-width: 450px;
-    margin-left: 1.4rem;
-    padding: 1.2rem;
-  }
-}
-/*WRAPS TWO ENTIRE PROFILES TOGETHER*/
-.profileWrap2 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 4.5rem;
-}
-@media (max-width: 800px) {
-  .profileWrap2 {
-    max-width: 750px;
-  }
-}
-@media (max-width: 500px) {
-  .profileWrap2 {
-    flex-direction: column;
-  }
-}
 /****  CLASSES ****/
 .profileTitle {
   font-size: 3.2rem;
   font-weight: 900;
+  margin: 1.4rem;
 }
 @media (max-width: 800px) {
   .profileTitle {
     font-size: 2.4rem;
   }
 }
+@media (max-width: 500px) {
+  .profileTitle {
+    margin: 1rem;
+  }
+}
 .profileName {
   font-size: 24px;
-  padding: 2.8rem;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .profileName {
@@ -766,23 +753,54 @@ body {
 }
 @media (max-width: 500px) {
   .profileName {
-    padding: 1.8rem;
+    padding: 1rem;
   }
 }
 .profileImg {
-  width: 126px;
-  height: 126px;
+  width: 150px;
+  height: 150px;
   border-radius: 125px;
   margin-left: 35%;
+  margin: 1.6rem;
+}
+.profileImg:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.imgBioWrap {
+  width: 20%;
+  height: 75px;
+  display: flex;
+}
+.bioHeader {
+  font-size: 2.1rem;
+  font-family: 'Permanent Marker', cursive;
+}
+.bioTxt {
+  width: 350px;
+  height: 250px;
+  padding: 1.4rem 3.2rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .bioTxt {
+    width: 300px;
+  }
 }
 .contactIcon {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 6.8rem;
+  height: 6.8rem;
+  margin: 1.2em;
+}
+.contactIcon:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.contactIcon:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 @media (max-width: 800px) {
   .contactIcon {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 4.3rem;
+    height: 4.3rem;
   }
 }
 .contactType {
@@ -798,13 +816,13 @@ body {
     font-size: 1.4rem;
   }
 }
-.specialThanks {
+.thanksTitle {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
-/*** ELEMENTS ***/
-p {
-  font-size: 1.2rem;
+.creditFonts {
+  font-size: 0.8rem;
+  text-align: center;
 }
 .contactForm {
   width: 850px;
@@ -907,6 +925,26 @@ textarea {
   -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+/*** UNDER CONSTRUCTION ***/
+.mainSection {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign {
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+  animation: glowShadow 1.2s ease infinite;
+  -moz-animation: glowShadow 1.2s ease infinite;
+  -webkit-animation: glowShadow 1.2s ease infinite;
+  font-weight: 900;
+  font-size: 7.2rem;
+}
+.underCon {
+  height: 450px;
 }
 header {
   display: flex;
