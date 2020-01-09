@@ -16,22 +16,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 450px;
-
+    justify-content: center;
+    width: 450px;
+ 
     @media @tablet {
-        max-width: 325px;
+        max-width: 255px;
     }
-   
+
     @media @phone {
         margin-bottom: 2.4rem;
-      padding: 3.2rem;
+      padding: 1.2rem;
       max-width: 475px; 
     }//end phone profileWrap
 }//end profileWrap
 
+
+/*WRAPS TWO ENTIRE PROFILES TOGETHER*/
+.wrapProfile2{
+    display: flex;
+    flex-direction: row;
+
+    @media @tablet {
+        
+    }
+    @media @phone {
+flex-direction: column;
+    }
+}
+
+
 /*WRAPS IMG AND CONTACTS*/
 .profileImgContactWrap {
-
+display: flex;
+flex-direction: column;
+align-items: center;
 
 }//end profileImgContacWrap
 
@@ -41,38 +59,8 @@
     align-items: center;
 }//end contactWrapAll
 
-/*WRAPS SINGLE CONTACT TYPE AND INFO*/
-.contactWrap {
-    margin-left: 3.2rem;
-    font-size: 1.8rem;
-    padding: 1.8rem;
 
-    @media @tablet {
-        max-width: 350px;
-        margin-left: 1.1rem;
-    }//end tablet contactWrap
-    
-    @media @phone {
-        max-width: 450px;
 
-        margin-left: 1.4rem;
-        padding: 1.2rem;
-    }//end phone contactWrap
-}//end contactWrap
-
-/*WRAPS TWO ENTIRE PROFILES TOGETHER*/
-.profileWrap2 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 4.5rem;
-
-    @media @tablet {
-        max-width: 750px;
-    }
-    @media @phone {
-flex-direction: column;
-    }
-}
 
 /****  CLASSES ****/
 
@@ -80,15 +68,21 @@ flex-direction: column;
 .profileTitle {
     font-size: 3.2rem;
     font-weight: 900;
+    margin: 1.4rem;
 
     @media @tablet {
         font-size: 2.4rem;
     }//end tablet profileTitle
+
+    @media @phone {
+        margin: 1.0rem;
+    }
 }
 
 .profileName {
     font-size: 24px;
-    padding: @pProfileTxt;
+
+    text-align: center;
 
     @media @tablet {
         font-size: 1.8rem;
@@ -96,21 +90,57 @@ flex-direction: column;
     }//end tablet profileName
 
     @media @phone {
-        padding: 1.8rem;
+        padding: 1.0rem;
     }//end phone profileName
 }
 
 .profileImg {
-    width: 126px;
-    height: 126px;
+    width: 150px;
+    height: 150px;
     border-radius: 125px;
     margin-left: 35%;
+    margin: 1.6rem;
+
+    &:hover {
+     
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
 }//end profileImg
 
+.imgBioWrap {
+    width: 20%;
+    height: 75px;
+    display: flex;
+}
+
+.bioHeader {
+    font-size: 2.1rem;
+    font-family: @marker-font;
+}
+.bioTxt {
+    width: 350px;
+    height: 250px;
+    padding: @pBioTxt;
+    text-align: center;
+
+    @media @tablet {
+        width:300px;
+    }
+}
 
 .contactIcon{
     width: @contactIconDim;
     height:@contactIconDim;
+    margin: 1.2em;
+
+    &:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+    &:active {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
 
     @media @tablet {
        width:@contactIconDimPhone;
@@ -131,12 +161,12 @@ flex-direction: column;
     }//end tablet contactInfo
 }//end contactInfo
 
-.specialThanks{
+.thanksTitle{
     text-align: center;
-  font-size: .9rem;
+  font-size: 1.0rem;
 }//end specialThanks
 
-/*** ELEMENTS ***/
-p{
-    font-size: 1.2rem;
+.creditFonts {
+    font-size: 0.8rem;
+    text-align: center;
 }
