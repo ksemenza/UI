@@ -26,6 +26,30 @@ SSH: git@github.com:Restaurant-passport-2/UI.git
 8. Open project by folder location with a support IDE
 
 # UI
+ **The Learning Annex of Developing UI**
+
+Create a mock or wireframe outline 
+
+Knowing how the layout is constructed makes it easier writing html because it is built upon a grid system that forms the infrastructure of site.  
+
+It is then manipulated by external sources that help refines my aspect of each elements declare.
+
+This includes but not limited to such things as positioning, color, size, visibility, and movement.
+
+The typical sources used to achieve manipulation of the html element is CSS and JavaScript.
+
+CSS helps the refine the visual aesthetic while JavaScript is more common used to carry out tasks that return a value or outcome.
+
+CSS can be implemented as a standalone, but it usually complied by and imported system such as LESS and SASS
+
+In order to use these resources, they must first be initiated through an installation of external resources.
+
+LESS gives the coder the ability to use multiple design files that have universal effects on all files of html. This is done without having to embed the specific location in each individual html head.
+
+Instead all the files are imported by one specific file that then complies then export the data as CSS code.
+
+The ability to know how each system is executed as well as which order and priority each element takes is vital when creating a UI that is efficient in usability and universally responsive despite media queries.
+
 
 
 
