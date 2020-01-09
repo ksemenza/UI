@@ -4,9 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     justify-content: center;
-    padding: 4.8rem;
+    margin-bottom: 3.2rem;
 }
 /*SECTION ELEMENT SEPERATES*/
 
@@ -25,8 +24,8 @@
 
     @media @phone {
         margin-bottom: 2.4rem;
-      padding: 1.2rem;
-      max-width: 475px; 
+  
+      max-width: 175px; 
     }//end phone profileWrap
 }//end profileWrap
 
@@ -35,13 +34,13 @@
 .wrapProfile2{
     display: flex;
     flex-direction: row;
+   
+  
 
     @media @tablet {
-        
+        flex-direction: column;
     }
-    @media @phone {
-flex-direction: column;
-    }
+
 }
 
 
@@ -125,7 +124,9 @@ align-items: center;
     text-align: center;
 
     @media @tablet {
-        width:300px;
+        width:fit-content;
+        height: 100%;
+  
     }
 }
 

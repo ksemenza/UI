@@ -8,16 +8,11 @@
     padding: @mWindowBorder;
 
     @media @phone {
-        height: 455px;
-  
+        height: 100%;
     }
-
     .heroHeader{
         .hHeroHeaderTxtStyle();
-
-       
     }//end heroHeader
-
     .heroTxt{
         width: 95%;
         line-height: 3.5rem;
@@ -26,40 +21,31 @@
         padding: 3.2rem;
         @media @tablet {
             width: 100%;
+            padding-top: 1.6rem;
         }
         @media @phone {
-            padding: 2.4rem;
-            line-height: 3.2rem;
+            padding: 1.4rem;
             font-size: 1.2rem;
-            
         }
     }//end heroTxt
-
 .heroBtns {
 
-    @media @phoneRespHeroBtn {
-        display: none;
-   
+    @media @tablet {
+        display: none; 
     }
-
 }
-
  .heroBtnLearn {
      .btnStyle();
-
      &:hover{
          .btnHover();
      }
  }
-
  .heroBtnSignUp {
     .btnStyle();
     &:hover{
         .btnHover();
     }
  }
-
-
 }//end heroImgWrap
 
 /*TOP SECTION*/
@@ -135,9 +121,7 @@
     border-bottom: none;
     padding-top: @pTxtTopBottom;
 
-  
 }
-
 #innerTxt2{
     border: 1px solid #37474f;
     border-top: none;

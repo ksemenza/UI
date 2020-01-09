@@ -117,21 +117,39 @@ textarea {
 
 /*** UNDER CONSTRUCTION ***/
 
-.mainSection {
+html .mainSection {
 	height: 450px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row-reverse
+	
 
 }
 
 .sign {
 	.glowShadow();
 	font-weight: 900;
-	font-size: 7.2rem;
-}
-.underCon {
-	height: 450px;
+	font-size: 5.5rem;
+	position: absolute;
+@media @tablet {
+		font-size: 3.8rem;
+	}
 
+	@media @phone {
+		font-size: 2.7rem;
+	}
 }
+ .underCon {
+	height: 80%;
+
+	@media @tablet {
+	width: 100%;
+	}
+
+	@media @phone {
+
+	}
+}
+
