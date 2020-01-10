@@ -35,7 +35,7 @@ git@github.com:Restaurant-passport-2/UI.git
     - Create a mock or wireframe outline 
 
     - Knowing how the layout is constructed makes it easier writing html because 
-      it is built upon a grid system that forms the infrastructure of site.  
+      it is built upon a grid system that forms the infrastructure of the site.  
 
     - It is then manipulated by external sources that help refines aspects of 
       each elements declare.
