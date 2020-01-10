@@ -52,16 +52,22 @@ The ability to know how each system is executed as well as which order and prior
 
 **Code Structure**
 1. The Html files are just framework of the UI final production
+
 2. The index.less file is used to import all other less files 
     -  all other less files must be written on this page to be used as an import
+    
 3.  The reset LESS file creates a standard format despite the use of different browsers
+
 4. Global values are a the standardization of the starting format associated with the sites specific needs
+
 5. Pages are formatted generally by 3 different files
     -navigation
     -site index
     -footer 
 6. Variables are a single value used repeatedly throughout the application
+
 7. Mixins are a collection of values that create a more dynamic output and can include a combination of different variables
+
 8. The last file is specific effects used throughout the program.
 
 - The LESS file will now be imported by the index.less file and then compiled automatically to the index.css file.
