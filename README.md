@@ -37,7 +37,7 @@ git@github.com:Restaurant-passport-2/UI.git
     - Knowing how the layout is constructed makes it easier writing html because 
       it is built upon a grid system that forms the infrastructure of site.  
 
-    - It is then manipulated by external sources that help refines my aspect of 
+    - It is then manipulated by external sources that help refines aspects of 
       each elements declare.
 
     - This includes but not limited to such things as positioning, color, size,
@@ -46,10 +46,10 @@ git@github.com:Restaurant-passport-2/UI.git
     - The typical sources used to achieve manipulation of the html element is 
       CSS and JavaScript.
 
-    - CSS helps the refine the visual aesthetic while JavaScript is more common 
+    - CSS helps refine the visual aesthetic while JavaScript is more common 
       used to carry out tasks that return a value or outcome.
 
-    - CSS can be implemented as a standalone, but it usually complied by and imported 
+    - CSS can be implemented as a standalone, but it usually complied by an imported 
       system such as LESS and SASS
 
      - In order to use these resources, they must first be initiated through an 
@@ -59,7 +59,7 @@ git@github.com:Restaurant-passport-2/UI.git
       effects on all files of html. This is done without having to embed the specific
       location in each individual html head.
 
-    - Instead all the files are imported by one specific file that then complies then 
+    - Instead all the files are imported by one specific file that then complies them
       export the data as CSS code.
 
     - The ability to know how each system is executed as well as which order and priority
