@@ -21,8 +21,8 @@
 /*HEADER MIXINS*/
 .hCoNameStyle {
   font-family: 'Stoke', serif;
-  color: #f79905;
-  font-size: 3.8rem;
+  color: #212A31;
+  font-size: 3.2rem;
   font-weight: 900;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
 }
@@ -55,7 +55,7 @@
 }
 .navLinkStyle {
   text-decoration: none;
-  color: #f79905;
+  color: #212A31;
   font-family: 'Stoke', serif;
   font-size: 1.8rem;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
@@ -107,8 +107,8 @@
   flex-direction: column;
   justify-content: center;
   vertical-align: middle;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-top: 3%;
   background-color: #f8f8f8;
   text-align: center;
@@ -120,10 +120,8 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-}
-.pTxtRow3 {
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 .contentShadow {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -134,19 +132,31 @@
   margin: 3.2rem;
   font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
-  border: 3px solid #44bf9c;
+  border: 4px inset #212A31;
   background-color: #f8f8f8;
-  color: #008e68;
+  color: #212A31;
   border-radius: 5px;
 }
-.btnHover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: #44bf9c;
-  border: 2px inset #f79905;
-  color: #f79905;
-  font-weight: 400;
-  font-size: 2.1rem;
-  letter-spacing: 1.25px;
+.btnStyle:hover {
+  /**  box-shadow: offset-x | offset-y| blur-radius **/
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(248, 148, 6, 0.22);
+  background-color: #fafafa;
+  border: 3px outset #212A31;
+  color: #212A31;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: 'Stoke', serif;
+}
+.btnStyle:active {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 4px inset #212A31;
+  background-color: #f8f8f8;
+  color: #212A31;
+  border-radius: 5px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -366,9 +376,6 @@ body {
     text-shadow: 0 0 20px #fff, 0 0 30px #44bf9c, 0 0 40px #44bf9c, 0 0 50px #44bf9c, 0 0 60px #44bf9c, 0 0 70px #44bf9c, 0 0 80px #44bf9c;
   }
 }
-.btnShadow {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
 /**LIFT SHADOW GLOW ORANGE**/
 .glowShadowOrg {
   color: #FB4264;
@@ -415,9 +422,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 100px;
   max-width: 100%;
-  background-color: #44bf9c;
+  background-color: #f79905;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: 2px groove #008e68;
@@ -447,8 +454,8 @@ header .logoCompanyNameWrap .logoImg {
 }
 header .logoCompanyNameWrap .companyName {
   font-family: 'Stoke', serif;
-  color: #f79905;
-  font-size: 3.8rem;
+  color: #212A31;
+  font-size: 3.2rem;
   font-weight: 900;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
 }
@@ -513,7 +520,7 @@ a {
 }
 .navAnchor {
   text-decoration: none;
-  color: #f79905;
+  color: #212A31;
   font-family: 'Stoke', serif;
   font-size: 1.8rem;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
@@ -530,12 +537,10 @@ a {
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
-.navAnchor:active {
-  color: #7bf2cd;
-  text-align: center;
-  -webkit-animation: glowT 1s ease-in-out infinite alternate;
-  -moz-animation: glowT 1s ease-in-out infinite alternate;
-  animation: glowT 1s ease-in-out infinite alternate;
+@media (max-width: 800px) {
+  .navAnchor:active {
+    font-size: 3.2rem;
+  }
 }
 @media (max-width: 500px) {
   a .logoImg {
@@ -545,8 +550,8 @@ a {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #44bf9c;
-  border-top: 2px groove #f79905;
+  background-color: #f79905;
+  border-top: 2px groove #44bf9c;
 }
 footer .bttmNavWrap {
   display: flex;
@@ -559,8 +564,9 @@ footer .copyright {
   padding: 1rem;
   font-size: 1.6rem;
   background-color: #008e68;
-  border-top: 2px groove #44bf9c;
-  color: #f79905;
+  border-top: 2px groove #008e68;
+  border-bottom: 2px groove #008e68;
+  color: #211a1a;
 }
 @media (max-width: 500px) {
   footer .copyright {
@@ -657,19 +663,31 @@ footer .copyright {
   margin: 3.2rem;
   font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
-  border: 3px solid #44bf9c;
+  border: 4px inset #212A31;
   background-color: #f8f8f8;
-  color: #008e68;
+  color: #212A31;
   border-radius: 5px;
 }
 .heroImgWrap .heroBtnLearn:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: #44bf9c;
-  border: 2px inset #f79905;
-  color: #f79905;
-  font-weight: 400;
-  font-size: 2.1rem;
-  letter-spacing: 1.25px;
+  /**  box-shadow: offset-x | offset-y| blur-radius **/
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(248, 148, 6, 0.22);
+  background-color: #fafafa;
+  border: 3px outset #212A31;
+  color: #212A31;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: 'Stoke', serif;
+}
+.heroImgWrap .heroBtnLearn:active {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 4px inset #212A31;
+  background-color: #f8f8f8;
+  color: #212A31;
+  border-radius: 5px;
 }
 .heroImgWrap .heroBtnSignUp {
   width: 170px;
@@ -677,19 +695,31 @@ footer .copyright {
   margin: 3.2rem;
   font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
-  border: 3px solid #44bf9c;
+  border: 4px inset #212A31;
   background-color: #f8f8f8;
-  color: #008e68;
+  color: #212A31;
   border-radius: 5px;
 }
 .heroImgWrap .heroBtnSignUp:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: #44bf9c;
-  border: 2px inset #f79905;
-  color: #f79905;
-  font-weight: 400;
-  font-size: 2.1rem;
-  letter-spacing: 1.25px;
+  /**  box-shadow: offset-x | offset-y| blur-radius **/
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(248, 148, 6, 0.22);
+  background-color: #fafafa;
+  border: 3px outset #212A31;
+  color: #212A31;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: 'Stoke', serif;
+}
+.heroImgWrap .heroBtnSignUp:active {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 4px inset #212A31;
+  background-color: #f8f8f8;
+  color: #212A31;
+  border-radius: 5px;
 }
 /*TOP SECTION*/
 .topWrap {
@@ -697,19 +727,22 @@ footer .copyright {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   /**IMG TOP SECTION**/
 }
 .topWrap .topHeader {
   padding-left: 4%;
   padding-top: 35px;
   padding-bottom: 35px;
-  background: linear-gradient(to top, transparent 62%, #008e68), linear-gradient(to right, transparent 32%, #7bf2cd);
-  background-color: #44bf9c;
+  background: linear-gradient(to top, transparent 62%, #be6b00), linear-gradient(to right, transparent 32%, #ffca49);
+  background-color: #f79905;
   font-weight: 900;
   font-family: 'Stoke', serif;
   font-size: 3.2rem;
-  color: #f79905;
-  border-top: 2px groove #7bf2cd;
+  color: #212A31;
+  border-top: 2px groove #fafafa;
+  border-bottom: 2px groove #fafafa;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 800px) {
@@ -753,15 +786,14 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   vertical-align: middle;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-top: 3%;
   background-color: #f8f8f8;
   text-align: center;
   border: 3px solid #37474f;
   border-radius: 7px;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  height: 200px;
 }
 @media (max-width: 800px) {
   .txtRow3 {
@@ -769,16 +801,17 @@ footer .copyright {
   }
 }
 #innerTxt1 {
-  border: 1px solid #37474f;
+  border: 1px dashed #37474f;
   border-bottom: none;
-  padding-top: 5%;
+  margin: -7px 15px;
+  font-size: 1.6rem;
 }
 #innerTxt2 {
-  border: 1px solid #37474f;
+  border: 1px dashed #37474f;
   border-top: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: 'Bree Serif', serif;
-  padding-bottom: 5%;
+  margin: 0 15px;
 }
 /*TOP IMG ADJ*/
 #topImg1 {
@@ -800,15 +833,23 @@ footer .copyright {
 #topTxt3 {
   width: 81%;
 }
+#innerTxt1,
+#innerTxt2 {
+  white-space: nowrap;
+}
 .stampBttmWrap {
   display: flex;
   justify-content: space-between;
+  padding-bottom: -5px;
 }
 .stampImg {
-  height: 32px;
-  width: 32px;
+  height: 42px;
+  width: 42px;
   margin-top: -15px;
   margin-bottom: 10px;
+  border: 1px solid #212A31;
+  padding: 5px;
+  border-radius: 5px;
   align-self: center;
 }
 .stampImg2 {
@@ -816,6 +857,8 @@ footer .copyright {
   width: 32px;
   margin-top: 10px;
   margin-bottom: -15px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 /**MID SECTION**/
 .midWrap {
@@ -879,19 +922,31 @@ footer .copyright {
   margin: 3.2rem;
   font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
-  border: 3px solid #44bf9c;
+  border: 4px inset #212A31;
   background-color: #f8f8f8;
-  color: #008e68;
+  color: #212A31;
   border-radius: 5px;
 }
 .bttmWrap .bttmBtnJoin:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: #44bf9c;
-  border: 2px inset #f79905;
-  color: #f79905;
-  font-weight: 400;
-  font-size: 2.1rem;
-  letter-spacing: 1.25px;
+  /**  box-shadow: offset-x | offset-y| blur-radius **/
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(248, 148, 6, 0.22);
+  background-color: #fafafa;
+  border: 3px outset #212A31;
+  color: #212A31;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: 'Stoke', serif;
+}
+.bttmWrap .bttmBtnJoin:active {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 4px inset #212A31;
+  background-color: #f8f8f8;
+  color: #212A31;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .bttmWrap .bttmBtnJoin {

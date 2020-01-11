@@ -2,15 +2,12 @@
     footer {
         display: flex;
         flex-direction: column;
-        background-color: @primary-teal;
-        border-top: 2px groove @primary-orange;
+        background-color:@fBgColor;
+        border-top: 2px groove @fBorderColor;
             .bttmNavWrap {
                 display: flex;
                 justify-content: space-evenly;             
                 padding: 2.2rem;
-
-            
-            
             }
             .copyright {
                 display: flex;
@@ -18,8 +15,8 @@
                 padding: 1.0rem;
                 font-size: 1.6rem;
                 background-color: @dark-teal;
-                border-top: 2px groove @primary-teal;
-                color: @primary-orange;
+                .borderGrooveTB(@dark-teal, @dark-orange);
+                color: @ebony-black;
                 
                 @media @phone {
                     color: @charcoal-black;
