@@ -7,11 +7,13 @@
     height: 600px;
     padding: @mWindowBorder;
 
+
     @media @phone {
         height: 100%;
     }
     .heroHeader{
         .hHeroHeaderTxtStyle();
+      
     }//end heroHeader
     .heroTxt{
         width: 95%;
@@ -19,6 +21,7 @@
         margin-top: 1.5rem;
         font-size: 2.1rem;
         padding: 3.2rem;
+      
         @media @tablet {
             width: 100%;
             padding-top: 1.6rem;
@@ -30,21 +33,19 @@
     }//end heroTxt
 .heroBtns {
 
+
     @media @tablet {
         display: none; 
     }
 }
  .heroBtnLearn {
      .btnStyle();
-     &:hover{
-         .btnHover();
-     }
+  
+ 
  }
  .heroBtnSignUp {
     .btnStyle();
-    &:hover{
-        .btnHover();
-    }
+ 
  }
 }//end heroImgWrap
 
@@ -57,13 +58,14 @@
     padding-left: 4%;
     padding-top: 35px;
     padding-bottom: 35px;
-    background:  linear-gradient(to top, transparent 62%, @dark-teal),linear-gradient(to right, transparent 32%, @light-teal);
-    background-color: @primary-teal;
+    background:  linear-gradient(to top, transparent 62%, @topGradientDark),linear-gradient(to right, transparent 32%,@topGradientLight);
+    background-color: @topHeadBgColor;
     font-weight: 900;
     font-family: @stroke-font;
     font-size: 3.2rem;
-    color: @primary-orange;
-    border-top: 2px groove @light-teal;
+    color: @topHeaderFontColor;
+    .borderGrooveTB(@light-orange, @light-orange);
+
     .txtEngraveFx();
     @media @tablet {
         text-align: center;
@@ -105,8 +107,7 @@
 //TXT BENEATH TOP IMG
 .txtRow3{
     .txtTopStyle();
-    .pTxtRow3();
-
+    height: 200px;
     @media @tablet {
         display: none;
     }
@@ -114,20 +115,23 @@
 
 //IMG ROW BOTH TOP AND BOTTOM
 
-@pTxtTopBottom:5%;
+
+
 
 #innerTxt1{
-    border: 1px solid #37474f;
+    border: 1px dashed #37474f;
     border-bottom: none;
-    padding-top: @pTxtTopBottom;
-
+    margin: -7px @mInnerTxtBorderRL;
+    font-size: 1.6rem;
 }
 #innerTxt2{
-    border: 1px solid #37474f;
+    border: 1px dashed #37474f;
     border-top: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: @bree-font;
-    padding-bottom: @pTxtTopBottom;
+    margin: 0 @mInnerTxtBorderRL;
+  
+
 }
 /*TOP IMG ADJ*/
 #topImg1 {
@@ -154,18 +158,27 @@
    
 }
 
+#innerTxt1, #innerTxt2{
+    white-space: nowrap;
+}
+
 //WRAP TXT TOP FIRST AND SECOND ROW
 .stampBttmWrap{
     display: flex;
     justify-content: space-between;
+    padding-bottom: -5px;
+
   
 }
 
 .stampImg{
-    height: 32px;
-    width: 32px;
+    height: 42px;
+    width: 42px;
     margin-top: -15px;
     margin-bottom: 10px;
+    border: 1px solid @charcoal-black;
+    padding: 5px;
+    border-radius: 5px;
     align-self: center;
 }
 
@@ -174,6 +187,8 @@
     width: 32px;
     margin-top: 10px;
     margin-bottom: -15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /**MID SECTION**/
@@ -232,10 +247,7 @@
     }//end bttmImgWrap
     .bttmBtnJoin {
         .btnStyle();
-        &:hover{
-            .btnHover();
-        }//end hover bttmBtn
-
+     
         @media @phone {
             width: 165px;
             height: 60px;

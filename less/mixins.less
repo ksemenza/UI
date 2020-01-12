@@ -120,13 +120,11 @@ margin-right: 6.5%;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-}
-
-
-.pTxtRow3 {
     padding-left: @pTxtRow3;
     padding-right: @pTxtRow3;
 }
+
+
 
 .contentShadow {
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -138,20 +136,41 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: 3.2rem;
     font-size: 1.8rem;
     font-family: @bree-font;
-    border: 3px solid @primary-teal;
+    border: 4px inset @btnBorderColor;
     background-color: @off-white;
-    color: @dark-teal;
+    color: @btnFontColor;
     border-radius: 5px;
+
+    &:hover{
+      /**  box-shadow: offset-x | offset-y| blur-radius **/
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(248,148,6,0.22);
+  background-color: @hBtnBgColor;
+  border: 3px outset @charcoal-black;
+  color:@hBtnFontColor;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: @stroke-font;
+    }
+
+    &:active {
+        width: 170px;
+        height: 50px;
+        margin: 3.2rem;
+        font-size: 1.8rem;
+        font-family: @bree-font;
+        border: 4px inset @btnBorderColor;
+        background-color: @off-white;
+        color: @btnFontColor;
+        border-radius: 5px;
+    
+    }
+
 }
 
-.btnHover {
-    //form file special-fx
-  .btnShadow();
-  background-color: @primary-teal;
-  border: 2px inset @primary-orange;
-  color:@primary-orange;
-  font-weight: 400;
-  font-size: 2.1rem;
-  letter-spacing: 1.25px;
-}
 
+
+//GROOVE TOP AND BOTTOM
+.borderGrooveTB(@grooveColorTop; @grooveColorTop){
+    border-top:2px groove @grooveColorTop;
+    border-bottom:2px groove @grooveColorTop;
+}
