@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         background-color:@fBgColor;
-        border-top: 2px groove @fBorderColor;
+        .borderGrooveTB(@primary-teal, @dark-orange);
             .bttmNavWrap {
                 display: flex;
                 justify-content: space-evenly;             
@@ -14,8 +14,8 @@
                 justify-content: center;
                 padding: 1.0rem;
                 font-size: 1.6rem;
-                background-color: @dark-teal;
-                .borderGrooveTB(@dark-teal, @dark-orange);
+                background-color:@dark-teal;
+                .borderGrooveTB(@dark-orange, @dark-orange);
                 color: @ebony-black;
                 
                 @media @phone {
@@ -24,6 +24,7 @@
               
             }
     }
+
 
 #bttmNavHome, #bttmNavAbout, #bttmNavContact, #bttmNavLogIn{
 

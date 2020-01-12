@@ -427,7 +427,7 @@ header {
   background-color: #f79905;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom: 2px groove #008e68;
+  border-bottom: 2px groove #44bf9c;
 }
 @media (max-width: 800px) {
   header {
@@ -552,6 +552,7 @@ footer {
   flex-direction: column;
   background-color: #f79905;
   border-top: 2px groove #44bf9c;
+  border-bottom: 2px groove #44bf9c;
 }
 footer .bttmNavWrap {
   display: flex;
@@ -564,8 +565,8 @@ footer .copyright {
   padding: 1rem;
   font-size: 1.6rem;
   background-color: #008e68;
-  border-top: 2px groove #008e68;
-  border-bottom: 2px groove #008e68;
+  border-top: 2px groove #be6b00;
+  border-bottom: 2px groove #be6b00;
   color: #211a1a;
 }
 @media (max-width: 500px) {
@@ -741,8 +742,8 @@ footer .copyright {
   font-family: 'Stoke', serif;
   font-size: 3.2rem;
   color: #212A31;
-  border-top: 2px groove #fafafa;
-  border-bottom: 2px groove #fafafa;
+  border-top: 2px groove #ffca49;
+  border-bottom: 2px groove #ffca49;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 800px) {
